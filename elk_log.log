@@ -1,0 +1,119 @@
+2020-05-26 12:15:56.220  INFO 1084 --- [restartedMain] c.e.a.AzureloggingApplication            : Starting AzureloggingApplication on EBL0008167X6M with PID 1084 (C:\Users\Dmwangi\Desktop\JAVA\azurelogging\target\classes started by Dmwangi in C:\Users\Dmwangi\Desktop\JAVA\azurelogging)
+2020-05-26 12:15:56.232  INFO 1084 --- [restartedMain] c.e.a.AzureloggingApplication            : The following profiles are active: dev
+2020-05-26 12:15:56.348  INFO 1084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-26 12:15:56.350  INFO 1084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-26 12:15:57.873  INFO 1084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-05-26 12:15:57.904  INFO 1084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2020-05-26 12:15:59.079  INFO 1084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-26 12:15:59.089  INFO 1084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-26 12:15:59.090  INFO 1084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-26 12:15:59.228  INFO 1084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-26 12:15:59.228  INFO 1084 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2877 ms
+2020-05-26 12:15:59.506  INFO 1084 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-26 12:16:01.585  INFO 1084 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-26 12:16:03.462  INFO 1084 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOGLOCK
+2020-05-26 12:16:03.535  INFO 1084 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOGLOCK
+2020-05-26 12:16:03.544  INFO 1084 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM azurelogging_db.DATABASECHANGELOGLOCK WHERE ID=1
+2020-05-26 12:16:03.683  INFO 1084 --- [restartedMain] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-05-26 12:16:07.874  INFO 1084 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM azurelogging_db.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2020-05-26 12:16:07.904  INFO 1084 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOG
+2020-05-26 12:16:07.908  INFO 1084 --- [restartedMain] l.c.StandardChangeLogHistoryService      : Reading from azurelogging_db.DATABASECHANGELOG
+2020-05-26 12:16:07.911  INFO 1084 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM azurelogging_db.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-05-26 12:16:07.984  INFO 1084 --- [restartedMain] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-05-26 12:16:08.649  INFO 1084 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 12:16:08.889  INFO 1084 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-26 12:16:08.990  INFO 1084 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-26 12:16:09.869  INFO 1084 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-26 12:16:10.249  INFO 1084 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 12:16:10.746  INFO 1084 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-26 12:16:10.788  INFO 1084 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 12:16:11.755  WARN 1084 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-26 12:16:13.507  INFO 1084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-26 12:16:13.584  INFO 1084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-26 12:16:13.586  INFO 1084 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-05-26 12:16:13.588  INFO 1084 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-05-26 12:16:13.619  INFO 1084 --- [restartedMain] c.e.a.AzureloggingApplication            : Started AzureloggingApplication in 18.596 seconds (JVM running for 20.305)
+2020-05-26 12:16:53.299  INFO 1084 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 12:16:53.301  INFO 1084 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-26 12:16:53.459  INFO 1084 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 157 ms
+2020-05-26 12:16:54.152  INFO 1084 --- [http-nio-8081-exec-1] c.e.a.controllers.TestController         : user found : User(id=1, name=John)
+2020-05-26 12:17:02.310  INFO 1084 --- [http-nio-8081-exec-4] c.e.a.controllers.TestController         : user found : User(id=2, name=Shyam)
+2020-05-26 12:17:29.287 ERROR 1084 --- [http-nio-8081-exec-5] c.e.a.controllers.TestController         : User Not Found with ID : 20
+2020-05-26 12:18:32.710  INFO 21540 --- [restartedMain] c.e.a.AzureloggingApplication            : Starting AzureloggingApplication on EBL0008167X6M with PID 21540 (C:\Users\Dmwangi\Desktop\JAVA\azurelogging\target\classes started by Dmwangi in C:\Users\Dmwangi\Desktop\JAVA\azurelogging)
+2020-05-26 12:18:32.714  INFO 21540 --- [restartedMain] c.e.a.AzureloggingApplication            : The following profiles are active: dev
+2020-05-26 12:18:32.812  INFO 21540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-26 12:18:32.813  INFO 21540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-26 12:18:34.661  INFO 21540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-05-26 12:18:34.689  INFO 21540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-05-26 12:18:36.598  INFO 21540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-26 12:18:36.615  INFO 21540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-26 12:18:36.616  INFO 21540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-26 12:18:36.828  INFO 21540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-26 12:18:36.828  INFO 21540 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4014 ms
+2020-05-26 12:18:37.131  INFO 21540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-26 12:18:39.022  INFO 21540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-26 12:18:41.079  INFO 21540 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOGLOCK
+2020-05-26 12:18:41.100  INFO 21540 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOGLOCK
+2020-05-26 12:18:41.109  INFO 21540 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM azurelogging_db.DATABASECHANGELOGLOCK WHERE ID=1
+2020-05-26 12:18:41.208  INFO 21540 --- [restartedMain] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-05-26 12:18:45.637  INFO 21540 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM azurelogging_db.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2020-05-26 12:18:45.640  INFO 21540 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOG
+2020-05-26 12:18:45.642  INFO 21540 --- [restartedMain] l.c.StandardChangeLogHistoryService      : Reading from azurelogging_db.DATABASECHANGELOG
+2020-05-26 12:18:45.644  INFO 21540 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM azurelogging_db.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-05-26 12:18:45.823  INFO 21540 --- [restartedMain] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-05-26 12:18:46.385  INFO 21540 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 12:18:46.790  INFO 21540 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-26 12:18:47.024  INFO 21540 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-26 12:18:47.434  INFO 21540 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-26 12:18:47.761  INFO 21540 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 12:18:48.131  INFO 21540 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-26 12:18:48.143  INFO 21540 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 12:18:48.462  WARN 21540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-26 12:18:49.460  INFO 21540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-26 12:18:49.516  INFO 21540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-26 12:18:49.519  INFO 21540 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-05-26 12:18:49.521  INFO 21540 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-05-26 12:18:49.558  INFO 21540 --- [restartedMain] c.e.a.AzureloggingApplication            : Started AzureloggingApplication in 17.534 seconds (JVM running for 21.066)
+2020-05-26 12:18:57.461  INFO 21540 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 12:18:57.463  INFO 21540 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-26 12:18:57.509  INFO 21540 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 46 ms
+2020-05-26 12:18:57.620 ERROR 21540 --- [http-nio-8081-exec-1] c.e.a.controllers.TestController         : User Not Found with ID : 20
+2020-05-26 12:19:28.173  INFO 26752 --- [restartedMain] c.e.a.AzureloggingApplication            : Starting AzureloggingApplication on EBL0008167X6M with PID 26752 (C:\Users\Dmwangi\Desktop\JAVA\azurelogging\target\classes started by Dmwangi in C:\Users\Dmwangi\Desktop\JAVA\azurelogging)
+2020-05-26 12:19:28.177  INFO 26752 --- [restartedMain] c.e.a.AzureloggingApplication            : The following profiles are active: dev
+2020-05-26 12:19:28.273  INFO 26752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-26 12:19:28.274  INFO 26752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-26 12:19:29.611  INFO 26752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-05-26 12:19:29.635  INFO 26752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-05-26 12:19:30.983  INFO 26752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-26 12:19:30.996  INFO 26752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-26 12:19:30.998  INFO 26752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-26 12:19:31.148  INFO 26752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-26 12:19:31.149  INFO 26752 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2874 ms
+2020-05-26 12:19:31.583  INFO 26752 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-26 12:19:32.188  INFO 26752 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-26 12:19:34.076  INFO 26752 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOGLOCK
+2020-05-26 12:19:34.089  INFO 26752 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOGLOCK
+2020-05-26 12:19:34.094  INFO 26752 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM azurelogging_db.DATABASECHANGELOGLOCK WHERE ID=1
+2020-05-26 12:19:34.199  INFO 26752 --- [restartedMain] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-05-26 12:19:36.958  INFO 26752 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM azurelogging_db.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2020-05-26 12:19:36.962  INFO 26752 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOG
+2020-05-26 12:19:36.964  INFO 26752 --- [restartedMain] l.c.StandardChangeLogHistoryService      : Reading from azurelogging_db.DATABASECHANGELOG
+2020-05-26 12:19:36.965  INFO 26752 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM azurelogging_db.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-05-26 12:19:37.010  INFO 26752 --- [restartedMain] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-05-26 12:19:37.303  INFO 26752 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 12:19:37.404  INFO 26752 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-26 12:19:37.554  INFO 26752 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-26 12:19:37.775  INFO 26752 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-26 12:19:37.892  INFO 26752 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 12:19:38.168  INFO 26752 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-26 12:19:38.191  INFO 26752 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 12:19:38.564  WARN 26752 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-26 12:19:39.395  INFO 26752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-26 12:19:39.466  INFO 26752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-26 12:19:39.469  INFO 26752 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-05-26 12:19:39.470  INFO 26752 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-05-26 12:19:39.488  INFO 26752 --- [restartedMain] c.e.a.AzureloggingApplication            : Started AzureloggingApplication in 11.938 seconds (JVM running for 13.011)
+2020-05-26 12:19:52.050  INFO 26752 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 12:19:52.051  INFO 26752 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-26 12:19:52.089  INFO 26752 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 37 ms
+2020-05-26 12:19:52.358 ERROR 26752 --- [http-nio-8081-exec-1] c.e.a.controllers.TestController         : User Not Found with ID : 20

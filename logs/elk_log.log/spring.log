@@ -1,0 +1,43 @@
+2020-05-26 12:21:57.895  INFO 4884 --- [restartedMain] c.e.a.AzureloggingApplication            : Starting AzureloggingApplication on EBL0008167X6M with PID 4884 (C:\Users\Dmwangi\Desktop\JAVA\azurelogging\target\classes started by Dmwangi in C:\Users\Dmwangi\Desktop\JAVA\azurelogging)
+2020-05-26 12:21:57.898  INFO 4884 --- [restartedMain] c.e.a.AzureloggingApplication            : The following profiles are active: dev
+2020-05-26 12:21:57.975  INFO 4884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-26 12:21:57.976  INFO 4884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-26 12:21:59.662  INFO 4884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-05-26 12:21:59.688  INFO 4884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2020-05-26 12:22:00.897  INFO 4884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-26 12:22:00.909  INFO 4884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-26 12:22:00.909  INFO 4884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-26 12:22:01.050  INFO 4884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-26 12:22:01.053  INFO 4884 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3076 ms
+2020-05-26 12:22:01.518  INFO 4884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-26 12:22:02.014  INFO 4884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-26 12:22:04.196  INFO 4884 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOGLOCK
+2020-05-26 12:22:04.210  INFO 4884 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOGLOCK
+2020-05-26 12:22:04.217  INFO 4884 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM azurelogging_db.DATABASECHANGELOGLOCK WHERE ID=1
+2020-05-26 12:22:04.314  INFO 4884 --- [restartedMain] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-05-26 12:22:07.345  INFO 4884 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM azurelogging_db.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2020-05-26 12:22:07.347  INFO 4884 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM azurelogging_db.DATABASECHANGELOG
+2020-05-26 12:22:07.348  INFO 4884 --- [restartedMain] l.c.StandardChangeLogHistoryService      : Reading from azurelogging_db.DATABASECHANGELOG
+2020-05-26 12:22:07.349  INFO 4884 --- [restartedMain] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM azurelogging_db.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-05-26 12:22:07.400  INFO 4884 --- [restartedMain] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-05-26 12:22:07.561  INFO 4884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 12:22:07.642  INFO 4884 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-26 12:22:07.717  INFO 4884 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-26 12:22:07.899  INFO 4884 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-26 12:22:08.033  INFO 4884 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 12:22:08.207  INFO 4884 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-26 12:22:08.218  INFO 4884 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 12:22:08.612  WARN 4884 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-26 12:22:09.645  INFO 4884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-26 12:22:09.798  INFO 4884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-26 12:22:09.803  INFO 4884 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-05-26 12:22:09.806  INFO 4884 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-05-26 12:22:09.853  INFO 4884 --- [restartedMain] c.e.a.AzureloggingApplication            : Started AzureloggingApplication in 12.679 seconds (JVM running for 14.14)
+2020-05-26 12:22:21.073  INFO 4884 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 12:22:21.074  INFO 4884 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-26 12:22:21.109  INFO 4884 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2020-05-26 12:22:21.264 ERROR 4884 --- [http-nio-8081-exec-1] c.e.a.controllers.TestController         : User Not Found with ID : 20
+2020-05-26 12:23:28.028  INFO 4884 --- [http-nio-8081-exec-4] c.e.a.controllers.TestController         : user found : User(id=2, name=Shyam)
+2020-05-26 14:56:27.520  WARN 4884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s914ms858µs900ns).
+2020-05-26 18:44:17.918  WARN 4884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h19s894ms355µs500ns).
+2020-05-26 18:46:12.535  WARN 4884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m12s500ms184µs800ns).
